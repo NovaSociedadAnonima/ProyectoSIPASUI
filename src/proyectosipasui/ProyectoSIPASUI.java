@@ -11,7 +11,7 @@ package proyectosipasui;
  */
 public class ProyectoSIPASUI {
     
-    private static         UI_Main inicio = new UI_Main();
+    private static UI_Main inicio = new UI_Main();
 
     /**
      * @param args the command line arguments
