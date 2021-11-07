@@ -10,12 +10,17 @@ package proyectosipasui;
  * @author usuLab
  */
 public class ProyectoSIPASUI {
+    
+    private static         UI_Main inicio = new UI_Main();
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        inicio.setVisible(true);
+    }
+    private void modousuarioActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        inicio.setVisible(false);
     }
     
 }
