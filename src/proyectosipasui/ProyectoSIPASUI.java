@@ -19,8 +19,4 @@ public class ProyectoSIPASUI {
     public static void main(String[] args) {
         inicio.setVisible(true);
     }
-    private void modousuarioActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        inicio.setVisible(false);
-    }
-    
 }

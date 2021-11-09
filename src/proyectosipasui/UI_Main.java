@@ -1,8 +1,8 @@
 package proyectosipasui;
 
 
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
-
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
  * @author Raymundo
  */
 public class UI_Main extends javax.swing.JFrame {
-
+ArrayList<Usuario> usuarios = new ArrayList<>();
     /**
      * Creates new form login
      */
@@ -40,7 +40,7 @@ public class UI_Main extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(153, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Login PassList"));
 
         jLabel1.setText("Usuario:");
@@ -121,19 +121,27 @@ public class UI_Main extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String usuario = jTextField1.getText();
         String paswd = jPasswordField1.getText();
+        int login = 0;
+        do{
+        
+        usuarios.add(new Usuario("user", "1234"));
+        usuarios.add(new Usuario("admin", "admin"));
+        
+        for (int i = 0; i < usuarios.size(); i++) {
+            
         
         if(usuario.isEmpty() || paswd.isEmpty()){
             JOptionPane.showMessageDialog(null, "Campos vacíos!");
             
         }else{
-             if(usuario.equals("admin") && paswd.equals("admin")){
-                 JOptionPane.showMessageDialog(null,"Bienvenido");
+             if(usuario.equals(usuario.equals(usuarios.get(i).getUser())) && paswd.equals(usuarios.get(i).getPasswd())){
+                 JOptionPane.showMessageDialog(null,"Bienvenido administrador");
                  panel_control pc = new panel_control();
                  pc.setVisible(true);
                  this.dispose();
                  
              }else{
-        if(usuario.equals("Usuario") && paswd.equals("1234")){
+        if(usuario.equals(usuarios) && paswd.equals(usuarios)){
                  JOptionPane.showMessageDialog(null,"Bienvenido");
                  panel_control pc = new panel_control();
                  pc.setVisible(true);
@@ -142,8 +150,12 @@ public class UI_Main extends javax.swing.JFrame {
         }else{
                  JOptionPane.showConfirmDialog(null,"Su usuario o contraseña es incorrecta");
              }
+            }
+         }
+        
         }
-       }
+        
+        }while(login != 0);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
