@@ -118,14 +118,30 @@ ArrayList<Usuario> usuarios = new ArrayList<>();
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    private static Usuario usuarioxd = new Usuario();
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String usuario = jTextField1.getText();
         String paswd = jPasswordField1.getText();
         int login = 0;
-        do{
         
-        usuarios.add(new Usuario("user", "1234"));
-        usuarios.add(new Usuario("admin", "admin"));
+        String aduser = "admin";
+        String adpwd = "admin";
+        
+        String user = "user";
+        String pwduser = "1234";
+        
+        
+        usuarioxd.setAduser(aduser);
+        usuarioxd.setAdpwd(adpwd);
+        
+        usuarioxd.setUser(user);
+        usuarioxd.setPasswd(pwduser);
+        
+        
+        usuarios.add(new Usuario(aduser, adpwd, user, pwduser));
+        
+        do{
         
         for (int i = 0; i < usuarios.size(); i++) {
             
@@ -134,14 +150,14 @@ ArrayList<Usuario> usuarios = new ArrayList<>();
             JOptionPane.showMessageDialog(null, "Campos vacíos!");
             
         }else{
-             if(usuario.equals(usuario.equals(usuarios.get(i).getUser())) && paswd.equals(usuarios.get(i).getPasswd())){
+               if(usuario.equals(usuarioxd.getAduser()) && paswd.equals(usuarioxd.getAdpwd())){
                  JOptionPane.showMessageDialog(null,"Bienvenido administrador");
                  panel_control pc = new panel_control();
                  pc.setVisible(true);
                  this.dispose();
                  
              }else{
-        if(usuario.equals(usuarios) && paswd.equals(usuarios)){
+               if(usuario.equals(usuarioxd.getUser()) && paswd.equals(usuarioxd.getPasswd())){
                  JOptionPane.showMessageDialog(null,"Bienvenido");
                  panel_control pc = new panel_control();
                  pc.setVisible(true);

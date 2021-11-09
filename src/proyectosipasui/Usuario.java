@@ -10,6 +10,10 @@ package proyectosipasui;
  * @author usuLab
  */
     public class Usuario {
+        
+    private String adusr;
+    private String adpwd;
+    
     private String usr;
     private String pass;
     
@@ -17,10 +21,29 @@ package proyectosipasui;
     
     }
     
-    public Usuario(String id, String pass) {
+    public Usuario(String adusr, String adpwd, String usr, String pass) {
+        this.adusr = adusr;
+        this.adpwd = adpwd;
         this.usr = usr;
         this.pass = pass;
     }
+    
+    public String getAduser() {
+        return adusr;
+    }
+
+    public void setAduser(String adusr) {
+        this.adusr = adusr;
+    }
+    
+    public String getAdpwd() {
+        return adpwd;
+    }
+
+    public void setAdpwd(String adpwd) {
+        this.adpwd = adpwd;
+    }
+    
 
     public String getUser() {
         return usr;
