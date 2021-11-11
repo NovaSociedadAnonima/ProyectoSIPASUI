@@ -5,6 +5,8 @@
  */
 package proyectosipasui;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author usuLab
@@ -16,6 +18,9 @@ package proyectosipasui;
     
     private String usr;
     private String pass;
+    
+    private ArrayList<String> User = new ArrayList<>();
+    private ArrayList<String> Pwd = new ArrayList<>();
     
     public Usuario(){
     
@@ -34,6 +39,7 @@ package proyectosipasui;
 
     public void setAduser(String adusr) {
         this.adusr = adusr;
+        
     }
     
     public String getAdpwd() {
@@ -59,5 +65,13 @@ package proyectosipasui;
 
     public void setPasswd(String pass) {
         this.pass = pass;
+    }
+    
+    public ArrayList<String> getAruser() {
+        return User;
+    }
+
+    public void setAruser(ArrayList<String> User) {
+        this.User = User;
     }
 }

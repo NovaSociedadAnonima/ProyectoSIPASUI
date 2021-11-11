@@ -131,6 +131,8 @@ ArrayList<Usuario> usuarios = new ArrayList<>();
         String user = "user";
         String pwduser = "1234";
         
+        Usuario ArrayUser = new Usuario(aduser, adpwd, user, pwduser);
+        
         
         usuarioxd.setAduser(aduser);
         usuarioxd.setAdpwd(adpwd);
@@ -138,8 +140,7 @@ ArrayList<Usuario> usuarios = new ArrayList<>();
         usuarioxd.setUser(user);
         usuarioxd.setPasswd(pwduser);
         
-        
-        usuarios.add(new Usuario(aduser, adpwd, user, pwduser));
+        Usuario.setAruser(usuarios);
         
         do{
         
