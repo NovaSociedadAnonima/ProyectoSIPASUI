@@ -161,23 +161,22 @@ ArrayList<Usuario> usuarios = new ArrayList<>();
         Admins.add(Admin);
         
         int incuser = 0;
-        int incadm = 0;
 
         do {
             
               if (usuario.isEmpty() || paswd.isEmpty()) {
                     JOptionPane.showMessageDialog(null, "Campos vacíos!");
-              }
+              } else{
             
             for (int i = 0; i < Admins.size(); i++) {
                     if (usuario.equals(Admins.get(i).getUser()) && paswd.equals(Admins.get(i).getPasswd())) {
-                        incadm = 0;
+                        incuser = 0;
                         JOptionPane.showMessageDialog(null, "Bienvenido administrador");
 
                         MenuAdmin.setVisible(true);
                         this.dispose();
                     } else {
-                        incadm = 1;
+                        incuser = 1;
                     }
               }
 
@@ -193,12 +192,9 @@ ArrayList<Usuario> usuarios = new ArrayList<>();
                         incuser = 1;
                         }
                     }
+              }
 
             if (incuser == 1){
-                JOptionPane.showConfirmDialog(null, "Su usuario o contraseña es incorrecta");
-            }
-            
-            if (incadm == 1){
                 JOptionPane.showConfirmDialog(null, "Su usuario o contraseña es incorrecta");
             }
             
