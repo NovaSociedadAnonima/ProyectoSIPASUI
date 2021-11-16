@@ -94,7 +94,7 @@ public class Agregandonuevoprofesor extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
+    /** a
      * @param args the command line arguments
      */
     
