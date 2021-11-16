@@ -9,12 +9,12 @@ package proyectosipasui;
  *
  * @author usuLab
  */
-public class Agregandonuevoprofesor extends javax.swing.JPanel {
+public class Agregandonuevocurso extends javax.swing.JPanel {
 
     /**
      * Creates new form asdsdsa
      */
-    public Agregandonuevoprofesor() {
+    public Agregandonuevocurso() {
         initComponents();
     }
 
@@ -45,11 +45,11 @@ public class Agregandonuevoprofesor extends javax.swing.JPanel {
 
         jButton1.setText("jButton1");
 
-        jLabel1.setText("Ingresa un nombre");
+        jLabel1.setText("Ingresa un ID");
 
-        jLabel2.setText("Ingresa un apellido");
+        jLabel2.setText("Ingresa un nombre");
 
-        jLabel3.setText("Ingresa la ci");
+        jLabel3.setText("Ingresa un grado");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);

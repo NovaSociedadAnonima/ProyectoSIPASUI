@@ -9,12 +9,12 @@ package proyectosipasui;
  *
  * @author usuLab
  */
-public class Agregandonuevoprofesor extends javax.swing.JPanel {
+public class Agregandonuevoalumno extends javax.swing.JPanel {
 
     /**
      * Creates new form asdsdsa
      */
-    public Agregandonuevoprofesor() {
+    public Agregandonuevoalumno() {
         initComponents();
     }
 

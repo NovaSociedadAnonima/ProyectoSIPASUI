@@ -79,17 +79,17 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Ingresa un nombre"/>
+        <Property name="text" type="java.lang.String" value="Ingresa un ID"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Ingresa un apellido"/>
+        <Property name="text" type="java.lang.String" value="Ingresa un nombre"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Ingresa la ci"/>
+        <Property name="text" type="java.lang.String" value="Ingresa un grado"/>
       </Properties>
     </Component>
   </SubComponents>

@@ -8,6 +8,7 @@ public class panel_control extends javax.swing.JFrame {
         initComponents();
         centrar();
     }
+    private static Agregandonuevoprofesor agregandonuevoprofesor = new Agregandonuevoprofesor();
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -42,6 +43,11 @@ public class panel_control extends javax.swing.JFrame {
         jButton2.setBackground(new java.awt.Color(0, 0, 0));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Agregar nuevo Profesor");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setBackground(new java.awt.Color(0, 0, 0));
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
@@ -108,6 +114,10 @@ public class panel_control extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
           System.exit(WIDTH);
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        agregandonuevoprofesor.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
  
     // Variables declaration - do not modify//GEN-BEGIN:variables
