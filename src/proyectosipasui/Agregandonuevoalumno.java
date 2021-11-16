@@ -16,6 +16,7 @@ public class Agregandonuevoalumno extends javax.swing.JFrame {
      */
     public Agregandonuevoalumno() {
         initComponents();
+        centrar();
     }
 
     /**
@@ -96,6 +97,10 @@ public class Agregandonuevoalumno extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
+  private void centrar(){
+      setLocationRelativeTo(null);
+  }
+      
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
