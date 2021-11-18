@@ -44,16 +44,13 @@ public class Agregandonuevocurso extends javax.swing.JFrame {
         jPanel1.setForeground(new java.awt.Color(0, 0, 0));
 
         jTextField1.setBackground(new java.awt.Color(0, 0, 0));
-        jTextField1.setText("jTextField1");
 
         jTextField2.setBackground(new java.awt.Color(0, 0, 0));
-        jTextField2.setText("jTextField2");
 
         jTextField3.setBackground(new java.awt.Color(0, 0, 0));
-        jTextField3.setText("jTextField3");
 
         jButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("jButton1");
+        jButton1.setText("Aceptar");
 
         jLabel1.setText("Ingrese ID");
 

@@ -55,7 +55,7 @@ public class Agregandonuevoalumno extends javax.swing.JFrame {
         jTextField3.setBackground(new java.awt.Color(0, 0, 0));
 
         jButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("jButton1");
+        jButton1.setText("Aceptar");
 
         jLabel1.setText("Ingrese nombre de alumno");
 
