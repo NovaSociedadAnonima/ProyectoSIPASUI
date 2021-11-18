@@ -13,9 +13,9 @@ import java.util.ArrayList;
  */
 class Curso {
 
-    private int IdCurso;
+    private String IdCurso;
     private String NombreCurso;
-    private int GradoCurso;
+    private String GradoCurso;
     private Lista ListaC=new Lista();
 
     public String getNombreCurso() {
@@ -26,19 +26,19 @@ class Curso {
         this.NombreCurso = NombreCurso;
     }
 
-    public int getGradoCurso() {
+    public String getGradoCurso() {
         return GradoCurso;
     }
 
-    public void setGradoCurso(int GradoCurso) {
+    public void setGradoCurso(String GradoCurso) {
         this.GradoCurso = GradoCurso;
     }
 
-    public int getIdCurso() {
+    public String getIdCurso() {
         return IdCurso;
     }
 
-    public void setIdCurso(int IdCurso) {
+    public void setIdCurso(String IdCurso) {
         this.IdCurso = IdCurso;
     }
 
