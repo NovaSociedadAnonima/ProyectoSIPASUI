@@ -5,6 +5,8 @@
  */
 package proyectosipasui;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author usuLab
@@ -51,6 +53,11 @@ public class Agregandonuevoprofesor extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Aceptar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Ingrese nombre de profesor");
 
@@ -108,6 +115,21 @@ public class Agregandonuevoprofesor extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private static Profesor profesor = new Profesor();
+    public static ArrayList<Profesor> Profesores = new ArrayList<>();
+    
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        String nombre = jTextField1.getText();
+        String apellido = jTextField2.getText();
+        String cedula = jTextField3.getText();
+        
+        profesor.setNombre(nombre);
+        profesor.setApellido(apellido);
+        profesor.setCi(cedula);
+        
+        Profesores.add(profesor);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /** a
      * @param args the command line arguments

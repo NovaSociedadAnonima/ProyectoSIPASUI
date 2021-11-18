@@ -9,17 +9,17 @@ package proyectosipasui;
  *
  * @author Santi
  */
-public class Alumno {
-     String Nombre;
-    String Apellido;
-    private String CI;
-   
+public class Profesor {
+     private String Nombre;
+    private String Apellido;
+    private String Ci;
 
- 
+
     public String getNombre() {
         return Nombre;
     }
 
+  
     public void setNombre(String Nombre) {
         this.Nombre = Nombre;
     }
@@ -33,12 +33,11 @@ public class Alumno {
     }
 
 
-    public String getCI() {
-        return CI;
+    public String getCi() {
+        return Ci;
     }
 
-
-    public void setCI(String CI) {
-        this.CI = CI;
+    public void setCi(String Ci) {
+        this.Ci = Ci;
     }
 }
