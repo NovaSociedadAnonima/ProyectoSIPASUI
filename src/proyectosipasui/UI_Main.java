@@ -168,6 +168,10 @@ ArrayList<Usuario> usuarios = new ArrayList<>();
                     JOptionPane.showMessageDialog(null, "Campos vacíos!");
               } else{
             
+                  
+            switch(usuario){
+                
+                case "admin":
             for (int i = 0; i < Admins.size(); i++) {
                     if (usuario.equals(Admins.get(i).getUser()) && paswd.equals(Admins.get(i).getPasswd())) {
                         incuser = 0;
@@ -179,7 +183,10 @@ ArrayList<Usuario> usuarios = new ArrayList<>();
                         incuser = 1;
                     }
               }
-
+            
+            break;
+            
+                case "user": 
             for (int i = 0; i < Usuarios.size(); i++) {
                 if (usuario.equals(Usuarios.get(i).getUser()) && paswd.equals(Usuarios.get(i).getPasswd())) {
                     incuser = 0;
@@ -192,12 +199,13 @@ ArrayList<Usuario> usuarios = new ArrayList<>();
                         incuser = 1;
                         }
                     }
+            break;
+        }
               }
 
             if (incuser == 1){
                 JOptionPane.showConfirmDialog(null, "Su usuario o contraseña es incorrecta");
             }
-            
         } while (login != 0);
     }//GEN-LAST:event_jButton1ActionPerformed
     
