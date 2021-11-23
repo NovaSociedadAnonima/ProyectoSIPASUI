@@ -6,6 +6,7 @@
 package proyectosipasui;
 
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -29,6 +30,8 @@ public class Agregandonuevoalumno extends javax.swing.JFrame {
     public static ArrayList<Alumno> Alumnos = new ArrayList<>();
     public static Alumno alumno = new Alumno();
     public static ArrayListsAlmacenados aring = new ArrayListsAlmacenados();
+    
+    private static panel_control MenuAdmin = new panel_control();
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -134,6 +137,10 @@ public class Agregandonuevoalumno extends javax.swing.JFrame {
         String apellido = jTextField2.getText();
         String cedula = jTextField3.getText();
         
+        
+        if (nombre.isEmpty() || apellido.isEmpty() || cedula.isEmpty()) {
+                    JOptionPane.showMessageDialog(null, "Campos vacíos!");
+        } else {
         alumno.setNombre(nombre);
         alumno.setApellido(apellido);
         alumno.setCI(cedula);
@@ -156,6 +163,14 @@ public class Agregandonuevoalumno extends javax.swing.JFrame {
         
         //ArrayList global
         aring.setArAlum(Alumnos);
+        
+        JOptionPane.showMessageDialog(null, "Datos ingresados correctamente");
+        
+        
+                        MenuAdmin.setVisible(true);
+                        this.dispose();
+                        
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
