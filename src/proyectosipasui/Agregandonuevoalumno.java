@@ -137,7 +137,7 @@ public class Agregandonuevoalumno extends javax.swing.JFrame {
         alumno.setApellido(apellido);
         alumno.setCI(cedula);
         
-        Alumnos.add(alumno);
+        Alumno.setArAlumnos();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

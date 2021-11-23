@@ -17,6 +17,16 @@ class Curso {
     private String NombreCurso;
     private String GradoCurso;
     private Lista ListaC=new Lista();
+    
+    public Curso(){
+        
+    }
+    
+    public Curso(String IdCurso, String NombreCurso, String GradoCurso){
+        this.IdCurso = "";
+        this.NombreCurso = "";
+        this.GradoCurso = "";
+    }
 
     public String getNombreCurso() {
         return NombreCurso;

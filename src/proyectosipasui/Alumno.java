@@ -5,16 +5,26 @@
  */
 package proyectosipasui;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Santi
  */
-public class Alumno {
-     String Nombre;
-    String Apellido;
-    private String CI;
+    public class Alumno {
+        private String Nombre;
+        private String Apellido;
+        private String CI;
    
-
+    public Alumno(){
+        
+    }
+    
+    public Alumno(String Nombre, String Apellido, String CI){
+        this.Nombre = "";
+        this.Apellido = "";
+        this.CI = "";
+    }
  
     public String getNombre() {
         return Nombre;

@@ -9,12 +9,21 @@ package proyectosipasui;
  *
  * @author Santi
  */
-public class Profesor {
-     private String Nombre;
-    private String Apellido;
-    private String Ci;
+    public class Profesor {
+        private String Nombre;
+        private String Apellido;
+        private String Ci;
 
-
+    public Profesor(){
+        
+    }
+    
+    public Profesor(String Nombre, String Apellido, String Ci){
+    this.Nombre = "";
+    this.Apellido = "";
+    this.Ci = "";
+    }
+    
     public String getNombre() {
         return Nombre;
     }
