@@ -28,6 +28,7 @@ public class Agregandonuevoalumno extends javax.swing.JFrame {
      */
     public static ArrayList<Alumno> Alumnos = new ArrayList<>();
     public static Alumno alumno = new Alumno();
+    public static ArrayListsAlmacenados aring = new ArrayListsAlmacenados();
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -136,8 +137,25 @@ public class Agregandonuevoalumno extends javax.swing.JFrame {
         alumno.setNombre(nombre);
         alumno.setApellido(apellido);
         alumno.setCI(cedula);
+
+        Alumno Alumn = new Alumno("Esteban", "Quito", "5439");
+        Alumno Alumn2 = new Alumno("Paula", "Soto", "17653");
+        Alumno Alumn3 = new Alumno("Julieta", "Garcia", "7223");
+        Alumno Alumn4 = new Alumno("Yuumi", "Morales", "1543");
+        Alumno Alumn5 = new Alumno("kevin", "Sosa", "1673");
+        Alumno Alumn6 = new Alumno("Manuel", "Soso", "12293");
+        Alumnos.add(Alumn);
+        Alumnos.add(Alumn2);
+        Alumnos.add(Alumn3);
+        Alumnos.add(Alumn4);
+        Alumnos.add(Alumn5);
+        Alumnos.add(Alumn6);
         
-        Alumno.setArAlumnos();
+        //ArrayList Local
+        Alumnos.add(alumno);
+        
+        //ArrayList global
+        aring.setArAlum(Alumnos);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
