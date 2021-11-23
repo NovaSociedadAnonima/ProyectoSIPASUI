@@ -148,6 +148,12 @@ public class agregandonuevoprofesor extends javax.swing.JFrame {
         Profesores.add(profesor);
         
         aring.setArAlum(Profesores);
+        
+        JOptionPane.showMessageDialog(null, "Datos ingresados correctamente");
+        
+        
+                        MenuAdmin.setVisible(true);
+                        this.dispose();
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 

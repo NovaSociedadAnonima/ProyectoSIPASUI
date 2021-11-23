@@ -6,6 +6,7 @@
 package proyectosipasui;
 
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -28,6 +29,10 @@ public class Agregandonuevocurso extends javax.swing.JFrame {
      */
     public static ArrayList<Curso> Cursos = new ArrayList<>();
     public static Curso curso = new Curso();
+    
+    public static ArrayListsAlmacenados aring = new ArrayListsAlmacenados();
+    
+    private static panel_control MenuAdmin = new panel_control();
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -124,11 +129,36 @@ public class Agregandonuevocurso extends javax.swing.JFrame {
         String nombre = jTextField2.getText();
         String grado = jTextField3.getText();
         
+        
+        if (ID.isEmpty() || nombre.isEmpty() || grado.isEmpty()) {
+                    JOptionPane.showMessageDialog(null, "Campos vacíos!");
+        } else {
         curso.setIdCurso(ID);
         curso.setNombreCurso(nombre);
         curso.setGradoCurso(grado);
         
+        Curso NewMateria = new Curso("18", "Programacion", "2");
+        Curso NewMateria2 = new Curso("17", "Sistemas Operativos", "2");
+        Curso NewMateria3 = new Curso("16", "EduFisica (si)", "2");
+        
+        Cursos.add(NewMateria);
+        Cursos.add(NewMateria2);
+        Cursos.add(NewMateria3);
+        
+        //ArrayList Local
         Cursos.add(curso);
+        
+        //ArrayList Global
+        aring.setArCurso(Cursos);
+        
+        
+        JOptionPane.showMessageDialog(null, "Datos ingresados correctamente");
+        
+        
+                        MenuAdmin.setVisible(true);
+                        this.dispose();
+        
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
