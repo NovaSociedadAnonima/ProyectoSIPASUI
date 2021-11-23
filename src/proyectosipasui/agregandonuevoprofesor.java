@@ -6,17 +6,18 @@
 package proyectosipasui;
 
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author usuLab
  */
-public class Agregandonuevoprofesor extends javax.swing.JFrame {
+public class agregandonuevoprofesor extends javax.swing.JFrame {
 
     /**
      * Creates new form Agregandonuevoalumno
      */
-    public Agregandonuevoprofesor() {
+    public agregandonuevoprofesor() {
         initComponents();
         centrar();
     }
@@ -119,17 +120,35 @@ public class Agregandonuevoprofesor extends javax.swing.JFrame {
     private static Profesor profesor = new Profesor();
    
     public static ArrayList<Profesor> Profesores = new ArrayList<>();
+
+    public static ArrayListsAlmacenados aring = new ArrayListsAlmacenados();
+    
+    private static panel_control MenuAdmin = new panel_control();
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String nombre = jTextField1.getText();
         String apellido = jTextField2.getText();
         String cedula = jTextField3.getText();
         
+        if (nombre.isEmpty() || apellido.isEmpty() || cedula.isEmpty()) {
+           JOptionPane.showMessageDialog(null, "Campos vacíos!");
+        } else {
         profesor.setNombre(nombre);
         profesor.setApellido(apellido);
         profesor.setCi(cedula);
         
+        Profesor NewProfe = new Profesor("Sebastian", "Torres", "1553");
+        Profesor NewProfe2 = new Profesor("Natalia", "Torres", "5131");
+        Profesor NewProfe3 = new Profesor("Gaston", "Gonzales", "1213");
+        
+        Profesores.add(NewProfe);
+        Profesores.add(NewProfe2);
+        Profesores.add(NewProfe3);
+        
         Profesores.add(profesor);
+        
+        aring.setArAlum(Profesores);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /** a

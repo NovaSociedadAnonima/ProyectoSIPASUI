@@ -8,7 +8,7 @@ public class panel_control extends javax.swing.JFrame {
         initComponents();
         centrar();
     }
-    private static Agregandonuevoprofesor agregandonuevoprofesor = new Agregandonuevoprofesor();
+    private static agregandonuevoprofesor agregandonuevoprofesor = new agregandonuevoprofesor();
     private static Agregandonuevoalumno agregandonuevoalumno = new Agregandonuevoalumno();
     private static Agregandonuevocurso agregandonuevocurso = new Agregandonuevocurso();
 
