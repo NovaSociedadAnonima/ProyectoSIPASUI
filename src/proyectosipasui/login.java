@@ -154,7 +154,7 @@ public class login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private static MenuUsuario MenuUsuario = new MenuUsuario();
-    private static panel_control MenuAdmin = new panel_control();
+    private static menuadmin MenuAdmin = new menuadmin();
     private static Usuario usuarioxd = new Usuario();
     private static Usuario Admin = new Usuario();
     private static ArrayList<Usuario> Usuarios = new ArrayList();
