@@ -157,7 +157,7 @@ public class addprofesor extends javax.swing.JFrame {
 
     public static ArrayListsAlmacenados aring = new ArrayListsAlmacenados();
     
-    private static panel_control MenuAdmin = new panel_control();
+    private static menuadmin MenuAdmin = new menuadmin();
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String nombre = nombretxt.getText();
