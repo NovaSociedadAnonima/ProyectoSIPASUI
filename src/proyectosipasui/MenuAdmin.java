@@ -44,7 +44,7 @@ public class menuadmin extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
 
-        jPanel2.setBackground(new java.awt.Color(0, 51, 204));
+        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
 
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
 
@@ -136,7 +136,7 @@ public class menuadmin extends javax.swing.JFrame {
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(82, 82, 82)
+                .addGap(85, 85, 85)
                 .addComponent(jButton4))
         );
 
@@ -175,9 +175,9 @@ public class menuadmin extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private static agregandonuevoprofesor agregandonuevoprofesor = new agregandonuevoprofesor();
-    private static Agregandonuevoalumno agregandonuevoalumno = new Agregandonuevoalumno();
-    private static Agregandonuevocurso agregandonuevocurso = new Agregandonuevocurso();
+    private static addprofesor agregandonuevoprofesor = new addprofesor();
+    private static addalumno agregandonuevoalumno = new addalumno();
+    private static addcurso agregandonuevocurso = new addcurso();
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         agregandonuevoalumno.setVisible(true);

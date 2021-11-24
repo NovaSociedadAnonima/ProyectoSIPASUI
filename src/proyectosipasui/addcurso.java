@@ -33,7 +33,7 @@ public class addcurso extends javax.swing.JFrame {
     
     public static ArrayListsAlmacenados aring = new ArrayListsAlmacenados();
     
-    private static panel_control MenuAdmin = new panel_control();
+    private static menuadmin MenuAdmin = new menuadmin();
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
