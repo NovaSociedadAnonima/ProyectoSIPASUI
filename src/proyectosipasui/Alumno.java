@@ -5,8 +5,6 @@
  */
 package proyectosipasui;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author Santi
