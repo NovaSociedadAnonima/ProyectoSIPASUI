@@ -16,7 +16,8 @@ public class menuadmin extends javax.swing.JFrame {
      */
     public menuadmin() {
         initComponents();
-        this.setLocationRelativeTo(null); 
+        this.setLocationRelativeTo(null);
+        setTitle("PassList by Nova");
     }
 
     /**
@@ -42,7 +43,6 @@ public class menuadmin extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
 

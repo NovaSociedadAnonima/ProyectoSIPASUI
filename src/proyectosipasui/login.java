@@ -207,7 +207,6 @@ public class login extends javax.swing.JFrame {
         Usuarios.add(usuarioxd);
         Admins.add(Admin);
         
-        int incuser = 0;
 
         do {
             
@@ -223,36 +222,30 @@ public class login extends javax.swing.JFrame {
                     break;
                 
                 case "admin":
-            for (int i = 0; i < Admins.size(); i++) {
-                    if (usuario.equals(Admins.get(i).getUser()) && paswd.equals(Admins.get(i).getPasswd())) {
-                        incuser = 0;
-                        JOptionPane.showMessageDialog(null, "Bienvenido administrador");
+                 JOptionPane.showMessageDialog(null, "Bienvenido administrador");
+                    for (int i = 0; i < Admins.size(); i++) {
+                        if (usuario.equals(Admins.get(i).getUser()) && paswd.equals(Admins.get(i).getPasswd())) {
 
-                        MenuAdmin.setVisible(true);
-                        this.dispose();
-                    } else {
-                        incuser = 1;
+                            MenuAdmin.setVisible(true);
+                            this.dispose();
+                        }
                     }
-              }
             
-            break;
+                break;
             
-                case "user": 
-            for (int i = 0; i < Usuarios.size(); i++) {
-                if (usuario.equals(Usuarios.get(i).getUser()) && paswd.equals(Usuarios.get(i).getPasswd())) {
-                    incuser = 0;
-                            JOptionPane.showMessageDialog(null, "Bienvenido Profesor");
+                case "user":
+                 JOptionPane.showMessageDialog(null, "Bienvenido Profesor");
+                    for (int i = 0; i < Usuarios.size(); i++) {
+                        if (usuario.equals(Usuarios.get(i).getUser()) && paswd.equals(Usuarios.get(i).getPasswd())) {
 
                             MenuUsuario.setVisible(true);
                             this.dispose();
 
-                        } else {
-                        incuser = 1;
                         }
                     }
-            break;
-        }
-              }
+                break;
+               }
+            }
         } while (login != 0);
     }//GEN-LAST:event_jButton1ActionPerformed
 
