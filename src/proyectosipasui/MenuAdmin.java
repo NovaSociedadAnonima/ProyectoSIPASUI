@@ -100,9 +100,9 @@ public class menuadmin extends javax.swing.JFrame {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(42, 42, 42)
+                .addGap(97, 97, 97)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(73, 73, 73)
+                .addGap(18, 18, 18)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -150,9 +150,9 @@ public class menuadmin extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private static agregandonuevoprofesor agregandonuevoprofesor = new agregandonuevoprofesor();
-    private static Agregandonuevoalumno agregandonuevoalumno = new Agregandonuevoalumno();
-    private static Agregandonuevocurso agregandonuevocurso = new Agregandonuevocurso();
+    private static addprofesor agregandonuevoprofesor = new addprofesor();
+    private static addalumno agregandonuevoalumno = new addalumno();
+    private static addcurso agregandonuevocurso = new addcurso();
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         agregandonuevoalumno.setVisible(true);
