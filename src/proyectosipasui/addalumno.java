@@ -46,8 +46,8 @@ public class addalumno extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        ignacio = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -90,19 +90,17 @@ public class addalumno extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Cedula de alumno");
 
-        jButton1.setBackground(new java.awt.Color(102, 102, 102));
-        jButton1.setForeground(new java.awt.Color(204, 204, 204));
-        jButton1.setText("OK");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
         jButton2.setText("Atras");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
+            }
+        });
+
+        ignacio.setText("OK");
+        ignacio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ignacioActionPerformed(evt);
             }
         });
 
@@ -116,16 +114,16 @@ public class addalumno extends javax.swing.JFrame {
                     .addComponent(cedulatxt, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(apellidotxt)
                     .addComponent(nombretxt)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton1))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel3)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel4)
                             .addComponent(jButton2))
-                        .addGap(0, 92, Short.MAX_VALUE)))
+                        .addGap(0, 92, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(ignacio)))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -146,7 +144,7 @@ public class addalumno extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(cedulatxt, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(ignacio)
                 .addContainerGap())
         );
 
@@ -199,7 +197,12 @@ public class addalumno extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cedulatxtActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+       MenuAdmin.setVisible(true);
+       this.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void ignacioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ignacioActionPerformed
         String nombre = nombretxt.getText();
         String apellido = apellidotxt.getText();
         String cedula = cedulatxt.getText();
@@ -236,14 +239,8 @@ public class addalumno extends javax.swing.JFrame {
         
                         MenuAdmin.setVisible(true);
                         this.dispose();
-                        
-        }
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-       MenuAdmin.setVisible(true);
-       this.dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+        }          
+    }//GEN-LAST:event_ignacioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -252,7 +249,7 @@ public class addalumno extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField apellidotxt;
     private javax.swing.JTextField cedulatxt;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton ignacio;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
