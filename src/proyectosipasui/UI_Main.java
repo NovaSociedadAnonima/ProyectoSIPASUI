@@ -135,7 +135,7 @@ ArrayList<Usuario> usuarios = new ArrayList<>();
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
- private static MenuUsuario MenuUsuario = new MenuUsuario();
+    private static MenuUsuario MenuUsuario = new MenuUsuario();
     private static panel_control MenuAdmin = new panel_control();
     private static Usuario usuarioxd = new Usuario();
     private static Usuario Admin = new Usuario();
