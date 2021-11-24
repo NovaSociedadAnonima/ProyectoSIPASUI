@@ -35,7 +35,7 @@ public class addalumno extends javax.swing.JFrame {
     public static Alumno alumno = new Alumno();
     public static ArrayListsAlmacenados aring = new ArrayListsAlmacenados();
     
-    private static panel_control MenuAdmin = new panel_control();
+    private static menuadmin MenuAdmin = new menuadmin();
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -254,6 +254,9 @@ public class addalumno extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(addalumno.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
